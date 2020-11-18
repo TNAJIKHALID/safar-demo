@@ -1,5 +1,4 @@
 package safar.factory;
-
 import safar.impl.SafarImpl1;
 import safar.impl.SafarImpl2;
 import safar.impl.SafarImpl3;
