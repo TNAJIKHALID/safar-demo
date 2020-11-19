@@ -5,19 +5,19 @@ import safar.impl.SafarImpl3;
 import safar.interfaces.SafarInterface;
 
 public class SafarFactory {
-    private SafarInterface safarImpl2;
-    private SafarInterface safarImpl1;
-    private SafarInterface safarImpl3;
+    private static SafarInterface safarImpl2;
+    private static SafarInterface safarImpl1;
+    private static SafarInterface safarImpl3;
 
-    public SafarInterface getSafarImpl1() {
+    public static SafarInterface getSafarImpl1() {
         return new SafarImpl1();
     }
 
-    public SafarInterface getSafarImpl2() {
+    public static SafarInterface getSafarImpl2() {
         return new SafarImpl2();
     }
 
-    public SafarInterface getSafarImpl3() {
+    public static SafarInterface getSafarImpl3() {
         return new SafarImpl3();
     }
 }
