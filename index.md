@@ -4,29 +4,25 @@ You can use the [editor on GitHub](https://github.com/TNAJIKHALID/safar-demo/edi
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Development stepS
+1. split safar project into small components
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+2. add every component into a maven project
 
-```markdown
-Syntax highlighted code block
+3. specify the component's version for instances safar-pos-tagger:1.0.0
 
-# Header 1
-## Header 2
-### Header 3
+4. apply VSC (Git/Github)
 
-- Bulleted
-- List
+5. integrate Spring Framework (Spring Rest) in order to make the component available as a Rest Api
 
-1. Numbered
-2. List
+6. create a pipeline for maven life cycles (clean-build-test-package)
 
-**Bold** and _Italic_ and `Code` text
+7. create a container of the component using docker (create Dockerfile)
 
-[Link](url) and ![Image](src)
-```
+8. create a pipeline using Github Actions (build-test-code analysis- deployment on a remote repository)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+9. describe usage of the component using Github pages
+
 
 ### Jekyll Themes
 
