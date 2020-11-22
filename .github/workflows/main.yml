@@ -7,7 +7,7 @@ name: Safar/CI publish
 on:
   push:
     branches: 
-      -'release'
+      -'master'
 jobs:
   publish:
     runs-on: ubuntu-18.04
