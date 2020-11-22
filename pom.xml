@@ -10,18 +10,23 @@
     </parent>
     <groupId>org.safar</groupId>
     <artifactId>safar-demo</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>safar-demo</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
     <distributionManagement>
-        <repository>
+        <!--<repository>
             <id>bintray-tnajikhalid-safar-demo</id>
             <name>tnajikhalid-safar-demo</name>
             <url>https://api.bintray.com/maven/tnajikhalid/safar-demo/safar-ci/;publish=1</url>
+        </repository>-->
+        <repository>
+            <id>my-server-safar-demo</id>
+            <url>ftp://files.000webhost.com/public_html/maven</url>
         </repository>
     </distributionManagement>
 
@@ -65,6 +70,13 @@
                 </configuration>
             </plugin>
         </plugins>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ftp</artifactId>
+                <version>3.2.0</version>
+            </extension>
+        </extensions>
     </build>
 
 </project>
