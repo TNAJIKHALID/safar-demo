@@ -19,6 +19,7 @@ public class SafarDemoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        System.out.println(System.getProperty("user.home"));
         File file = Paths.get(System.getProperty("user.home")
                 + "/data.txt").toFile();
         FileInputStream fis = new FileInputStream(file);
