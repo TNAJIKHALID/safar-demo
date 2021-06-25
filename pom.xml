@@ -23,10 +23,15 @@
             <id>bintray-tnajikhalid-safar-demo</id>
             <name>tnajikhalid-safar-demo</name>
             <url>https://api.bintray.com/maven/tnajikhalid/safar-demo/safar-ci/;publish=1</url>
-        </repository>-->
+        </repository>
         <repository>
             <id>my-server-safar-demo</id>
             <url>ftp://files.000webhost.com/public_html/maven</url>
+        </repository>
+        -->
+        <repository>
+            <id>safar-server</id>
+            <url>sftp://arabic.emi.ac.ma/var/www/html/maven</url>
         </repository>
     </distributionManagement>
 
@@ -73,9 +78,11 @@
         <extensions>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-ftp</artifactId>
-                <version>3.2.0</version>
+                <artifactId>wagon-ssh</artifactId>
+                <version>2.10</version>
             </extension>
+
+
         </extensions>
     </build>
 
